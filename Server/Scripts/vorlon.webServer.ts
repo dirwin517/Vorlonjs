@@ -48,7 +48,7 @@ export module VORLON {
             this.init();
 
             //Sets
-            app.set('port', process.env.PORT || 1337);
+            app.set('port', this.http.port);
             app.set('views', path.join(__dirname, '../views'));
             app.set('view engine', 'jade');
 
